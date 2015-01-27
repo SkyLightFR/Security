@@ -1,0 +1,19 @@
+Fichier de configuration par défault de OpenSSL => /etc/ssl/openssl.cnf
+Validité des certificats : 1 an
+
+Le fichier CA/private/cakey.pem est la clé privée de la CA
+Le fichier CA/cacert.pem est le certificat permettant l'authentification
+
+Les fichiers CA/private/makeyclient.key et CA/private/webserver.key sont deux clés privées dont tous deux appartiennent aux subjects et permettent de signer leurs CSR
+
+Les fichiers CA/makeyclient.csr et CA/webserver.csr sont les Certificats
+
+Dans le fichier index.txt se trouve les informations du CRT que l'on a créé et les certificats validés.
+Le fichier index.old ne contient rien puisque l'ancien fichier index.txt ne contenait rien. 
+En ce qui concerne le fichier serial, il passe à 02.
+
+En ce qui concerne le certificat du serveur :
+	Date de validité : 27 Janvier 2016
+	Issuer : C=FR, ST=NORD, L=VILLENEUVE ASCQ, O=SECURITE
+	Version X509 : Version 3
+	Algorithme utilisé : sha256withRSAEncryption
